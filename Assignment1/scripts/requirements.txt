@@ -1,0 +1,5 @@
+pandas
+azure-identity
+azure-storage-blob
+openpyxl
+boto3
