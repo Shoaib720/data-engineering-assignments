@@ -110,6 +110,6 @@ I have create 2 bash files that will execute the python scripts. We will use the
 `generate_report.sh`
 
 ```bash
-13 18 * * * /bin/bash /home/shoaibshaikh/projects/apache-airflow-projects/scripts/dvdrental/run.sh
-15 18 * * * /bin/bash /home/shoaibshaikh/projects/apache-airflow-projects/scripts/dvdrental/generate_report.sh
+00 16 * * * /bin/bash /home/shoaibshaikh/projects/apache-airflow-projects/scripts/dvdrental/run.sh
+15 16 * * * /bin/bash /home/shoaibshaikh/projects/apache-airflow-projects/scripts/dvdrental/generate_report.sh
 ```
