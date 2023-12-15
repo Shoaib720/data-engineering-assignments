@@ -95,3 +95,21 @@ This stage performs the following:
 - Performs join using `PySpark.Dataframe.join` based on business problem and converts it to dataframe.
 - Generates horizontal barplots using `seaborn` library and saves it to `plots` folder.
 - Creates a PDF report using `fpdf` library.
+
+### Top 10 Most Rented Films
+![most_rented](plots/Top%2010%20Most%20Rented%20Movies.png)
+
+### Top 5 Most Revenue Generating Films
+![most_revenue](plots/Top%205%20Most%20Revenue%20Generating%20Movies.png)
+
+## Cron
+
+I have create 2 bash files that will execute the python scripts. We will use these bash files in cron.
+
+`run.sh`
+`generate_report.sh`
+
+```bash
+13 18 * * * /bin/bash /home/shoaibshaikh/projects/apache-airflow-projects/scripts/dvdrental/run.sh
+15 18 * * * /bin/bash /home/shoaibshaikh/projects/apache-airflow-projects/scripts/dvdrental/generate_report.sh
+```
